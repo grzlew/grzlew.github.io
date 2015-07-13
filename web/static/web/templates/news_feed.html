@@ -1,1 +1,54 @@
-STRONA GLOWNA
+<div class="container-fluid">
+
+    <div class="row">
+        <h1>Witamy</h1>
+
+        <div class="col-md-10">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at imperdiet libero.
+                Nunc id lectus eget sem placerat hendrerit. In rhoncus metus nec metus venenatis, et hendrerit ex
+                rutrum. Etiam ultrices a mi sed tristique. Duis in dapibus diam. Mauris nisl erat, vestibulum sit amet
+                sem finibus, porta venenatis erat. Quisque at libero tristique, posuere augue in, dignissim enim. Sed
+                pharetra elementum nisl, non commodo leo bibendum nec. Nulla luctus augue non vehicula consequat. Etiam
+                sed magna ac lorem aliquam eleifend.</p>
+
+            <p>
+                In hac habitasse platea dictumst. Nunc quis purus non ante placerat varius et quis sem. Etiam malesuada
+                quis augue placerat porttitor. Integer semper vulputate sapien, at fringilla erat suscipit eu. Sed eget
+                sagittis enim. Aenean lobortis lectus nec erat vulputate, id laoreet nisi scelerisque. Cras feugiat quis
+                sapien id ullamcorper. In finibus nulla ut massa tristique, at pulvinar odio vestibulum.</p>
+
+            <p>
+                Mauris vulputate nunc quis ante scelerisque vehicula. Praesent aliquam arcu non tellus varius
+                sollicitudin. Morbi lectus purus, hendrerit sed semper porta, auctor ut libero. Donec rhoncus purus
+                augue, eget fermentum nisi euismod id. Vivamus dictum maximus lectus. Aenean at turpis eget turpis porta
+                interdum facilisis non mauris. Cras dictum facilisis neque ut gravida. Quisque varius leo et leo aliquet
+                dictum.
+            </p>
+        </div>
+    </div>
+    <div class="row" ng-controller="NewsController">
+        <div class="col-md-10">
+            <h1>Aktualności</h1>
+
+            <div class="row" ng-repeat="item in news | orderBy: item.pub_date : true">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>{{ item.title }}</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>{{ item.text }}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="pub-date col-md-offset-10 col-md-2">
+                            <p>Opublikowano: {{ item.pub_date }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -15,9 +15,19 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from rest_framework import routers
+
 from web.views import IndexView
+from web.views import RoomViewSet
+from web.views import NewsViewSet
+
+router = routers.DefaultRouter()
+router.register(r'rooms', RoomViewSet)
+router.register(r'news', NewsViewSet)
+
 
 urlpatterns = [
     url(r'^$', IndexView.as_view(), name="index"),
+    url(r'^', include(router.urls)),
     url(r'^admin/', include(admin.site.urls)),
 ]

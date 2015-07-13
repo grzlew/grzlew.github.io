@@ -2,14 +2,18 @@
 
 var appControllers = angular.module('appControllers', []);
 
-appControllers.controller('NewsController', ['$scope', function($scope) {
+appControllers.controller('NewsController', ['$scope', 'News', function($scope, News) {
+    $scope.news = News.query();
+}]);
+
+appControllers.controller('GalleryController', ['$scope', function($scope) {
 
 }]);
 
-appControllers.controller('AnotherController', ['$scope'], function ($scope) {
+appControllers.controller('PricingController', ['$scope', 'Room', function ($scope, Room) {
+    $scope.rooms = Room.query();
+}]);
 
-});
-
-appControllers.controller('TwoController', ['$scope', function($scope) {
+appControllers.controller('ContactController', ['$scope', function($scope) {
 
 }]);

@@ -9,8 +9,11 @@
     <script src="{% static "web/js/libs/bootstrap.min.js" %}"></script>
     <script src="{% static "web/js/libs/angular.min.js" %}"></script>
     <script src="{% static "web/js/libs/angular-route.min.js" %}"></script>
+    <script src="{% static "web/js/libs/angular-resource.min.js" %}"></script>
 
 
+
+    <script src="{% static "web/js/services.js" %}"></script>
     <script src="{% static "web/js/controllers.js" %}"></script>
     <script src="{% static "web/js/app.js" %}"></script>
 
@@ -24,11 +27,19 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-2 sidebar">
-            <ul class="nav nav-sidebar">
-                <li class="active"><a href="#news_feed">Strona główna</a></li>
-                <li><a href="#one">Coś tam coś tam</a></li>
-                <li><a href="#two">Kontakt</a></li>
-
+            <ul class="nav nav-sidebar" auto-active>
+                <li>
+                    <a href="#/news-feed">Strona główna</a>
+                </li>
+                <li>
+                    <a href="#/galery">Galeria</a>
+                </li>
+                <li>
+                    <a href="#/pricing">Cennik</a>
+                </li>
+                <li>
+                    <a href="#/contact">Kontakt</a>
+                </li>
             </ul>
         </div>
     </div>
