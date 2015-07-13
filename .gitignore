@@ -64,3 +64,5 @@ target/
 venv/
 **/migrations/**
 **/migrations
+
+local_settings.py
