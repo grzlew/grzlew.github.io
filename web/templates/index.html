@@ -1,0 +1,41 @@
+{% load staticfiles %}
+
+<html ng-app="hostelPaslek">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <script src="{% static "web/js/libs/jquery-2.1.4.min.js" %}"></script>
+    <script src="{% static "web/js/libs/bootstrap.min.js" %}"></script>
+    <script src="{% static "web/js/libs/angular.min.js" %}"></script>
+    <script src="{% static "web/js/libs/angular-route.min.js" %}"></script>
+
+
+    <script src="{% static "web/js/controllers.js" %}"></script>
+    <script src="{% static "web/js/app.js" %}"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static "web/css/bootstrap.css" %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static "web/css/styles.css" %}"/>
+
+
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <li class="active"><a href="#news_feed">Strona główna</a></li>
+                <li><a href="#one">Coś tam coś tam</a></li>
+                <li><a href="#two">Kontakt</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-md-10 col-md-offset-2 main main-content">
+        <div ng-view></div>
+    </div>
+</div>
+</body>
+</html>
