@@ -61,3 +61,4 @@ target/
 *.iml
 
 *.sqlite3
+venv/
