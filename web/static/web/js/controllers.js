@@ -7,7 +7,11 @@ appControllers.controller('NewsController', ['$scope', 'News', function($scope, 
 }]);
 
 appControllers.controller('GalleryController', ['$scope', function($scope) {
-
+    $scope.init = function() {
+        $(function () {
+            $('.fotorama').fotorama();
+        });
+    }
 }]);
 
 appControllers.controller('PricingController', ['$scope', 'Room', function ($scope, Room) {

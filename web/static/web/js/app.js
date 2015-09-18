@@ -15,10 +15,11 @@ var app = angular.module('hostelPaslek', [
                 if (path) {
                     angular.forEach(element.find('li'), function (li) {
                         var anchor = li.querySelector('a');
+                        const activeClass = 'active';
                         if (anchor.href.match('#' + path + '(?=\\?|$)')) {
-                            angular.element(li).addClass('active-menu');
+                            angular.element(li).addClass(activeClass);
                         } else {
-                            angular.element(li).removeClass('active-menu');
+                            angular.element(li).removeClass(activeClass);
                         }
                     });
                 }
@@ -28,7 +29,7 @@ var app = angular.module('hostelPaslek', [
             scope.$on('$locationChangeSuccess', setActive);
         }
     }
-}]);
+}]); 
 
 app.config(['$routeProvider',
     function ($routeProvider) {

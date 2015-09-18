@@ -1,6 +1,23 @@
-<div class="container-fluid">
+<div class="container-fluid" ng-init="init()">
 
     <div class="row">
-        <h1>Galeria</h1>
+        <div class="col-md-12">
+            <h3>Galeria</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10">
+            <div class="fotorama"
+                 data-allowfullscreen="true"
+                 data-fit="scaledown"
+                 data-nav="thumbs">
+                <img src="static/web/img/image1.jpg">
+                <img src="static/web/img/image2.jpg">
+                <img src="static/web/img/image3.jpg">
+                <img src="static/web/img/image4.jpg">
+                <img src="static/web/img/image5.jpg">
+                <img src="static/web/img/image6.jpg">
+            </div>
+        </div>
     </div>
 </div>
