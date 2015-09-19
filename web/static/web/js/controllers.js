@@ -34,3 +34,7 @@ appControllers.controller('PricingController', ['$scope', 'Room', function ($sco
 appControllers.controller('ContactController', ['$scope', function($scope) {
 
 }]);
+
+appControllers.controller('NotFoundController', ['$scope', function($scope) {
+
+}]);

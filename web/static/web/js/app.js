@@ -55,7 +55,8 @@ app.config(['$routeProvider',
                 redirectTo: '/news-feed'
             }).
             otherwise({
-                templateUrl: 'static/web/templates/not_found.html'
+                templateUrl: 'static/web/templates/not_found.html',
+                controller: 'NotFoundController'
             });
     }]);
 
