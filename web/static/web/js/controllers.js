@@ -2,6 +2,19 @@
 
 var appControllers = angular.module('appControllers', []);
 
+appControllers.controller('MainController', ['$scope','$translate', function($scope, $translateProvider) {
+    var switchLocale = function (localeKey) {
+        $translateProvider.use(localeKey);
+    };
+
+    $scope.switchToPL = function () {
+        switchLocale('pl');
+    };
+    $scope.switchToEN = function(){
+        switchLocale('en');
+    };
+}]);
+
 appControllers.controller('NewsController', ['$scope', 'News', function($scope, News) {
     $scope.news = News.query();
 }]);

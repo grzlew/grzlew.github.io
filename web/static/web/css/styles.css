@@ -52,3 +52,8 @@
 .pub-date {
     font-size: 8px;
 }
+
+
+.lang-panel {
+    float: right;
+}

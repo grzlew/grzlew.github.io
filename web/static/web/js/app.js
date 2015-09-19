@@ -4,7 +4,8 @@
 var app = angular.module('hostelPaslek', [
     'ngRoute',
     'appServices',
-    'appControllers'
+    'appControllers',
+    'pascalprecht.translate'
 ]).directive('autoActive', ['$location', function ($location) {
     return {
         restrict: 'A',
@@ -57,3 +58,17 @@ app.config(['$routeProvider',
                 templateUrl: 'static/web/templates/not_found.html'
             });
     }]);
+
+app.config(['$translateProvider', function ($translateProvider) {
+    $translateProvider.translations('pl', messages_pl);
+    $translateProvider.translations('en', messages_en);
+    $translateProvider.determinePreferredLanguage();
+
+    $translateProvider.fallbackLanguage('en');
+    $translateProvider.preferredLanguage('pl');
+}]);
+
+app.config(function($interpolateProvider) {
+    $interpolateProvider.startSymbol('{$');
+    $interpolateProvider.endSymbol('$}');
+});

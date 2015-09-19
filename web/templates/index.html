@@ -1,4 +1,5 @@
 {% load staticfiles %}
+{% load i18n %}
 
 <html ng-app="hostelPaslek">
 <head>
@@ -6,13 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <script src="{% static "web/js/libs/jquery-2.1.4.min.js" %}"></script>
-    {#    <script src="{% static "web/js/libs/bootstrap.min.js" %}"></script>#}
+    <script src="{% static "web/js/libs/bootstrap.min.js" %}"></script>
     <script src="{% static "web/js/libs/fotorama.js" %}"></script>
     <script src="{% static "web/js/libs/angular.min.js" %}"></script>
     <script src="{% static "web/js/libs/angular-route.min.js" %}"></script>
     <script src="{% static "web/js/libs/angular-resource.min.js" %}"></script>
+    <script src="{% static "web/js/libs/angular-translate.min.js" %}"></script>
 
 
+    <script src="{% static "web/js/i18n/locale_en.js" %}"></script>
+    <script src="{% static "web/js/i18n/locale_pl.js" %}"></script>
     <script src="{% static "web/js/services.js" %}"></script>
     <script src="{% static "web/js/controllers.js" %}"></script>
     <script src="{% static "web/js/app.js" %}"></script>
@@ -24,30 +28,39 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-inverse navbar-fixed-top" ng-controller="MainController">
     <div class="container">
         <div class="navbar-header">
             <a href="#/news-feed" class="navbar-brand">Hostel Pasłęk</a>
         </div>
         <div class="collapse navbar-collapse" id="navbar">
             <ul id="navbar-menu" class="nav navbar-nav" auto-active>
-                <li id="news-feed-menu-item" class="active"><a href="#/news-feed">Strona główna</a>
+                <li id="news-feed-menu-item" class="active">
+                    <a href="#/news-feed">
+                        {$'mainPageNavLink' | translate $}
+                    </a>
                 </li>
                 <li>
-                    <a href="#/pricing">Oferta</a>
+                    <a href="#/pricing">
+                        {$ 'pricingNavLink' | translate $}
+                    </a>
                 </li>
                 <li>
-                    <a href="#/galery">Galeria</a>
+                    <a href="#/galery">{$ 'galleryNavLink' | translate $}</a>
                 </li>
                 <li>
-                    <a href="#/contact">Kontakt</a>
+                    <a href="#/contact">{$ 'contactNavLink' | translate $}</a>
                 </li>
             </ul>
+            <div class="lang-panel">
+                <li><a ng-click="switchToPL()">PL</a></li>
+                <li><a ng-click="switchToEN()">EN</a></li>
+            </div>
         </div>
     </div>
 </nav>
 
-<div class="container-fluid">
+<div class="container-fluid" ng-controller="MainController">
     <div class="col-md-10 col-md-offset-2 main main-content">
         <div ng-view></div>
     </div>
