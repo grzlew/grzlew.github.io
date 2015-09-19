@@ -64,8 +64,7 @@ app.config(['$translateProvider', function ($translateProvider) {
     $translateProvider.translations('en', messages_en);
     $translateProvider.determinePreferredLanguage();
 
-    $translateProvider.fallbackLanguage('en');
-    $translateProvider.preferredLanguage('pl');
+    $translateProvider.fallbackLanguage('pl');
 }]);
 
 app.config(function($interpolateProvider) {
