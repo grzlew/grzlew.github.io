@@ -30,12 +30,12 @@
 <nav class="navbar navbar-inverse navbar-fixed-top" ng-controller="MainController">
     <div class="container">
         <div class="navbar-header">
-            <a href="#/news-feed" class="navbar-brand">Hostel Pasłęk</a>
+            <a href="#/landing-page" class="navbar-brand">Hostel Pasłęk</a>
         </div>
         <div class="collapse navbar-collapse" id="navbar">
             <ul id="navbar-menu" class="nav navbar-nav" auto-active>
                 <li id="news-feed-menu-item" class="active">
-                    <a href="#/news-feed">
+                    <a href="#/landing-page">
                         {$ 'navbar_mainPageNavLink' | translate $}
                     </a>
                 </li>
@@ -64,7 +64,7 @@
 </nav>
 
 <div class="container-fluid" ng-controller="MainController">
-    <div class="col-md-10 col-md-offset-2 main main-content">
+    <div class="col-lg-10 col-lg-offset-2 main main-content">
         <div ng-view></div>
     </div>
 </div>

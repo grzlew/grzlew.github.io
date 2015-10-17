@@ -15,8 +15,12 @@ appControllers.controller('MainController', ['$scope','$translate', function($sc
     };
 }]);
 
-appControllers.controller('NewsController', ['$scope', 'News', function($scope, News) {
-    $scope.news = News.query();
+appControllers.controller('LandingController', ['$scope', function($scope) {
+    $scope.init = function() {
+        $(function () {
+            $('.fotorama').fotorama();
+        });
+    }
 }]);
 
 appControllers.controller('GalleryController', ['$scope', function($scope) {

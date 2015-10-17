@@ -3,7 +3,7 @@
     <div class="row">
         <h1>{$ 'prices_prices' | translate $}</h1>
 
-        <div class="col-md-10">
+        <div class="col-lg-10">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at imperdiet libero.
                 Nunc id lectus eget sem placerat hendrerit. In rhoncus metus nec metus venenatis, et hendrerit ex
@@ -16,38 +16,38 @@
     </div>
     <div class="row">
         <h2>{$ 'prices_availableRooms' | translate $}</h2>
-        <div class="col-md-offset-1 col-md-10" ng-controller="PricingController">
+        <div class="col-lg-offset-1 col-lg-10" ng-controller="PricingController">
 
             <div class="row" ng-repeat="room in rooms">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-lg-3">
                         Numer:
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3">
                         {$ room.no $}:
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-lg-3">
                         Cena:
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3">
                         {$ room.price $}
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-lg-3">
                         Lokalizacja:
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3">
                         {$ room.location $}:
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-lg-3">
                         Opis:
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-lg-5">
                         <p>
                             {$ room.desc $}
                         </p>

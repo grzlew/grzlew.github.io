@@ -4,7 +4,11 @@ var messages_pl = {
     objectName: objectName,
 
     not_found: 'Nie znaleziono takiej strony',
-    news_welcome: 'Witamy',
+    landing_welcome: 'Kim jesteśmy?',
+    landing_localization: "Gdzie nas znaleźć?",
+    landing_contact: "Skontaktuj się",
+    landing_prices: "Co oferujemy?",
+
     gallery_gallery: 'Galeria',
 
     prices_prices: 'Cennik',
@@ -15,7 +19,7 @@ var messages_pl = {
     contact_phone: 'tel.',
     contact_mobile: 'kom.',
     contact_mail: '@',
-    contact_address: 'Adres',
+    contact_address: 'adres',
 
     contact_nameAndAddress: 'Nazwa i adres firmy',
     contact_accountNumber: 'Nr. konta',

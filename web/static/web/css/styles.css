@@ -57,3 +57,28 @@
 .lang-panel {
     float: right;
 }
+
+.landing-location-map {
+    border:0;
+    width: 425px;
+    height: 350px;
+}
+
+
+/* Flexible iFrame */
+
+.flexible-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.flexible-container iframe,
+.flexible-container object,
+.flexible-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

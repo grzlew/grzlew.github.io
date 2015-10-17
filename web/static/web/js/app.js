@@ -35,9 +35,9 @@ var app = angular.module('hostelPaslek', [
 app.config(['$routeProvider',
     function ($routeProvider) {
         $routeProvider.
-            when('/news-feed', {
-                templateUrl: 'static/web/templates/news_feed.html',
-                controller: 'NewsController'
+            when('/landing-page', {
+                templateUrl: 'static/web/templates/landing_page.html',
+                controller: 'LandingController'
             }).
             when('/galery', {
                 templateUrl: 'static/web/templates/gallery.html',
@@ -52,7 +52,7 @@ app.config(['$routeProvider',
                 controller: 'ContactController'
             }).
             when('/', {
-                redirectTo: '/news-feed'
+                redirectTo: '/landing-page'
             }).
             otherwise({
                 templateUrl: 'static/web/templates/not_found.html',
