@@ -1,0 +1,26 @@
+[
+  {
+    "no": 0,
+    "name": "Pokój 1-os na piętrze",
+    "price": 150,
+    "size": "Do 5 osób",
+    "location": "1 pietro",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at imperdiet libero. Nunc id lectus eget sem placerat hendrerit. In rhoncus metus nec metus venenatis, et hendrerit exrutrum. Etiam ultrices a mi sed tristique.",
+    "images": [
+      {"img": "static/web/img/image1.jpg"},
+      {"img": "static/web/img/image3.jpg"}
+    ]
+  },
+  {
+    "no": 1,
+    "name": "Pokój 2-os na piętrze",
+    "price": 150,
+    "size": "Do 3 osób",
+    "location": "1 pietro",
+    "desc": "Bardzo krótki opis",
+    "images": [
+      {"img":"static/web/img/image2.jpg"},
+      {"img":"static/web/img/image4.jpg"}
+    ]
+  }
+]

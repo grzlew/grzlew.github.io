@@ -4,7 +4,7 @@ var appServices = angular.module('appServices', ['ngResource']);
 
 appServices.factory('Room', ['$resource',
     function($resource){
-        return $resource('rooms', {}, {
+        return $resource('/static/web/data/rooms.json', {}, {
             query: {method:'GET', isArray:true}
         });
     }]);
