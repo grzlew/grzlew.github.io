@@ -36,7 +36,6 @@ appControllers.controller('PricingController', ['$scope', 'Room', function ($sco
     controller.rooms = Room.query();
 
     $scope.rooms = this.rooms;
-    //$scope.options = {width: '100%', height: 400, loop: true, keyboard: true, nav: 'thumbs'};
 
     $scope.selectRoom = function (roomId) {
         var currentRoom = controller.rooms[roomId];
@@ -54,7 +53,6 @@ appControllers.controller('PricingController', ['$scope', 'Room', function ($sco
 }]);
 
 appControllers.controller('ContactController', ['$scope', function ($scope) {
-x
 }]);
 
 appControllers.controller('NotFoundController', ['$scope', function ($scope) {
