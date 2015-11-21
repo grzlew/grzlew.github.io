@@ -33,7 +33,11 @@ appControllers.controller('GalleryController', ['$scope', function ($scope) {
 
 appControllers.controller('PricingController', ['$scope', 'Room', function ($scope, Room) {
     var controller= this;
-    controller.rooms = Room.query();
+    controller.rooms = Room.query([], function (data) {
+        if (data.length > 0) {
+            $scope.selectRoom(0);
+        }
+    });
 
     $scope.rooms = this.rooms;
 

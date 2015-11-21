@@ -51,7 +51,7 @@
 }
 
 .room-main {
-    padding-left: 300px;
+    padding-left: 250px;
 }
 
 .room-gallery {
@@ -117,6 +117,7 @@
 
     #sidebar-wrapper {
         width: 250px;
+        margin-left: -30px;
         height: 100%;
     }
 }
