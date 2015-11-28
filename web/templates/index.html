@@ -26,15 +26,17 @@
 
 </head>
 <body>
-
-<nav class="navbar navbar-inverse navbar-fixed-top" ng-controller="MainController">
+<nav class="navbar navbar-inverse navbar-default navbar-fixed-top" ng-controller="MainController">
     <div class="container">
         <div class="navbar-header">
-            <a href="#/landing-page" class="navbar-brand">Hostel Pasłęk</a>
+            <a class="navbar-brand" href="#/landing-page">
+                Hostel Pasłęk
+            </a>
         </div>
-        <div class="collapse navbar-collapse" id="navbar">
-            <ul id="navbar-menu" class="nav navbar-nav" auto-active>
-                <li id="news-feed-menu-item" class="active">
+
+        <div class="collapse navbar-collapse">
+            <ul id="navbar" class="nav navbar-nav" auto-active>
+                <li>
                     <a href="#/landing-page">
                         {$ 'navbar_mainPageNavLink' | translate $}
                     </a>
@@ -55,16 +57,24 @@
                     </a>
                 </li>
             </ul>
-            <div class="lang-panel">
-                <img ng-click="switchToPL()" src="{% static "web/img/polish_flag.png" %}"/>
-                <img ng-click="switchToEN()" src="{% static "web/img/british_flag.png" %}"/>
-            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Switch language <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><img ng-click="switchToPL()" src="{% static "web/img/polish_flag.png" %}"/></li>
+                        <li><img ng-click="switchToEN()" src="{% static "web/img/british_flag.png" %}"/></li>
+                    </ul>
+                </li>
+            </ul>
+
         </div>
     </div>
 </nav>
 
-<div class="container-fluid" ng-controller="MainController">
-    <div class="col-lg-12 main main-content">
+<div class="container" ng-controller="MainController">
+    <div class="col-lg-12 col-md-12 col-sm-12 main main-content">
         <div ng-view></div>
     </div>
 </div>
