@@ -50,18 +50,10 @@
     padding-left: 250px;
 }
 
-.room-gallery {
-    width: 50%;
-    height: 50%;
-    padding-top: 20px;
-}
-
-
 #sidebar-wrapper {
     padding-top: 20px;
     position: fixed;
     overflow-y: auto;
-    background: #f8f8f8;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -83,22 +75,21 @@
 
 .sidebar-nav li a {
     display: block;
-    text-decoration: none;
-    /*font-weight: 200;*/
-    /*color: #337ab7;*/
+    font-weight: bold;
     color: #e24b41;
     background-color: transparent;
 }
 
 .sidebar-nav li a:hover {
-    text-decoration: none;
-    background: #eee;
+    font-weight: bolder;
+    /*background: #eee;*/
 }
 
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
     /*color: #fff;*/
-    background: #eee;
+    /*background: #eee;*/
+    font-weight: bolder;
     text-decoration: none;
 }
 
