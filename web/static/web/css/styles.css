@@ -108,3 +108,7 @@
         height: 100%;
     }
 }
+
+.table-condensed {
+    font-size: 14px
+}
