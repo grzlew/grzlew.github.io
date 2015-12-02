@@ -22,5 +22,17 @@
       {"img":"static/web/img/image2.jpg"},
       {"img":"static/web/img/image4.jpg"}
     ]
+  },
+  {
+    "no": 2,
+    "name": "Pokój 3-os na piętrze",
+    "price": 1337,
+    "size": "Do 3 osób",
+    "location": "15 pietro",
+    "desc": "Inny opis. Lorem ipsum dolor sit amet",
+    "images": [
+      {"img":"static/web/img/image5.jpg"},
+      {"img":"static/web/img/image6.jpg"}
+    ]
   }
 ]
