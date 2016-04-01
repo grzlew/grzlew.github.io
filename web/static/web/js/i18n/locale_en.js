@@ -4,6 +4,8 @@ var messages_en = {
     objectName: objectName,
 
     not_found: 'Sorry, we couldn\'t find such website',
+    localization: 'Get me there!',
+    reservation: 'Contact us',
     news_welcome: 'Welcome',
     gallery_gallery: 'Gallery',
 

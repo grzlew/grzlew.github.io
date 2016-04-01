@@ -8,6 +8,8 @@ var messages_pl = {
     landing_localization: "Gdzie nas znaleźć?",
     landing_contact: "Skontaktuj się",
     landing_prices: "Co oferujemy?",
+    localization: 'Jak dotrzeć',
+    reservation: 'Kontakt',
 
     gallery_gallery: 'Galeria',
 
