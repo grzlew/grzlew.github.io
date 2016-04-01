@@ -7,8 +7,9 @@
     "location": "1 pietro",
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at imperdiet libero. Nunc id lectus eget sem placerat hendrerit. In rhoncus metus nec metus venenatis, et hendrerit exrutrum. Etiam ultrices a mi sed tristique.",
     "images": [
-      {"img": "static/web/img/image1.jpg"},
-      {"img": "static/web/img/image3.jpg"}
+      {"img": "static/web/img/02.jpg"},
+      {"img": "static/web/img/03.jpg"},
+      {"img": "static/web/img/06.jpg"}
     ]
   },
   {
@@ -19,8 +20,9 @@
     "location": "1 pietro",
     "desc": "Bardzo krótki opis",
     "images": [
-      {"img":"static/web/img/image2.jpg"},
-      {"img":"static/web/img/image4.jpg"}
+      {"img":"static/web/img/14.jpg"},
+      {"img":"static/web/img/15.jpg"},
+      {"img":"static/web/img/DSC_5415.jpg"}
     ]
   },
   {
@@ -31,8 +33,9 @@
     "location": "15 pietro",
     "desc": "Inny opis. Lorem ipsum dolor sit amet",
     "images": [
-      {"img":"static/web/img/image5.jpg"},
-      {"img":"static/web/img/image6.jpg"}
+      {"img":"static/web/img/11.jpg"},
+      {"img":"static/web/img/10.jpg"},
+      {"img":"static/web/img/08.jpg"}
     ]
   }
 ]

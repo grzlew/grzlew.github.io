@@ -35,7 +35,7 @@ appControllers.controller('GalleryController', ['$scope', function ($scope) {
     }
 }]);
 
-appControllers.controller('PricingController', ['$scope', 'Room', function ($scope, Room) {
+appControllers.controller('PricingController', ['$scope', '$translate', '$sce', 'Room', function ($scope, $translateProvider, $sce, Room) {
     var controller = this;
     controller.rooms = Room.query([], function (data) {
         if (data.length > 0) {
@@ -57,6 +57,9 @@ appControllers.controller('PricingController', ['$scope', 'Room', function ($sco
             controller.galleryFotorama.load(currentRoom.images);
         }
     };
+    $translateProvider(['offerings_page']).then(function (translations) {
+        $scope.what_we_offer = $sce.trustAsHtml(translations.offerings_page);
+    });
 
 }]);
 
