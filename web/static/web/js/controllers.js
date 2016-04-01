@@ -3,8 +3,12 @@
 var appControllers = angular.module('appControllers', []);
 
 appControllers.controller('MainController', ['$scope', '$translate', function ($scope, $translateProvider) {
+    const lang_key = 'NG_TRANSLATE_LANG_KEY';
+
     var switchLocale = function (localeKey) {
         $translateProvider.use(localeKey);
+        localStorage.setItem(lang_key, localeKey);
+        location.reload();
     };
 
     $scope.switchToPL = function () {
@@ -13,6 +17,12 @@ appControllers.controller('MainController', ['$scope', '$translate', function ($
     $scope.switchToEN = function () {
         switchLocale('en');
     };
+
+    var currentLocale = function () {
+        return localStorage.getItem(lang_key) || 'pl';
+    };
+
+    $translateProvider.use(currentLocale());
 }]);
 
 appControllers.controller('LandingController', ['$scope', '$translate', '$sce', function ($scope, $translateProvider, $sce) {

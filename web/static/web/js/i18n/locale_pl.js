@@ -38,7 +38,7 @@ var messages_pl = {
     '<li>Trzy dwupokojowe apartamenty z łazienką – sypialnia dla 2 osób + dostawka w pokoju dziennym dla maksymalnie dwóch osób.  </li>' +
     '<li>Jeden dwuosobowy pokój z łazienką.</li>' +
     '<li>Świetlica z aneksem kuchennym – ekspres do kawy, kuchenka mikrofalowa, lodówki,zmywarka, płyta indukcyjna. </li> </ul>',
-    our_offerings: 'Co proponujemy:',
+    our_offerings: 'Co oferujemy?',
     offerings_page: '<p> Chcielbyśmy zaprosić Państwa do kamienicy wybudowanej w okolicach roku 1830 poddanej generalnemu remontowi w roku 2015. Do dyspozycji' +
     'gości oferujemy:</p>  <ul>  ' +
     '<li>Trzy dwupokojowe apartamenty z łazienką – sypialnia dla 2 osób + dostawka w pokoju dziennym dla maksymalnie dwóch osób.  </li>' +
