@@ -15,10 +15,14 @@ appControllers.controller('MainController', ['$scope', '$translate', function ($
     };
 }]);
 
-appControllers.controller('LandingController', ['$scope', function ($scope) {
+appControllers.controller('LandingController', ['$scope', '$translate', '$sce', function ($scope, $translateProvider, $sce) {
     $scope.init = function () {
         $(function () {
             $('.fotorama').fotorama();
+        });
+        $translateProvider(['landing_welcome_text', 'landing_offerings']).then(function (translations) {
+            $scope.who_we_are = $sce.trustAsHtml(translations.landing_welcome_text);
+            $scope.what_we_offer = $sce.trustAsHtml(translations.landing_offerings);
         });
     }
 }]);
@@ -32,7 +36,7 @@ appControllers.controller('GalleryController', ['$scope', function ($scope) {
 }]);
 
 appControllers.controller('PricingController', ['$scope', 'Room', function ($scope, Room) {
-    var controller= this;
+    var controller = this;
     controller.rooms = Room.query([], function (data) {
         if (data.length > 0) {
             $scope.selectRoom(0);

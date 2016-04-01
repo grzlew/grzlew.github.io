@@ -3,27 +3,8 @@
     <div class="row">
         <div class="col-lg-6 col-sm-12 col-xs-12">
             <h1>{$ 'landing_welcome' | translate $}</h1>
-
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at imperdiet libero.
-                Nunc id lectus eget sem placerat hendrerit. In rhoncus metus nec metus venenatis, et hendrerit ex
-                rutrum. Etiam ultrices a mi sed tristique. Duis in dapibus diam. Mauris nisl erat, vestibulum sit amet
-                sem finibus, porta venenatis erat. Quisque at libero tristique, posuere augue in, dignissim enim. Sed
-                pharetra elementum nisl, non commodo leo bibendum nec. Nulla luctus augue non vehicula consequat. Etiam
-                sed magna ac lorem aliquam eleifend.</p>
-
-            <p>
-                In hac habitasse platea dictumst. Nunc quis purus non ante placerat varius et quis sem. Etiam malesuada
-                quis augue placerat porttitor. Integer semper vulputate sapien, at fringilla erat suscipit eu. Sed eget
-                sagittis enim. Aenean lobortis lectus nec erat vulputate, id laoreet nisi scelerisque. Cras feugiat quis
-                sapien id ullamcorper. In finibus nulla ut massa tristique, at pulvinar odio vestibulum.</p>
-
-            <p>
-                Mauris vulputate nunc quis ante scelerisque vehicula. Praesent aliquam arcu non tellus varius
-                sollicitudin. Morbi lectus purus, hendrerit sed semper porta, auctor ut libero. Donec rhoncus purus
-                augue, eget fermentum nisi euismod id. Vivamus dictum maximus lectus. Aenean at turpis eget turpis porta
-                interdum facilisis non mauris. Cras dictum facilisis neque ut gravida. Quisque varius leo et leo aliquet
-                dictum.
-            </p>
+            <div ng-bind-html="who_we_are">
+            </div>
         </div>
 
         <div class="col-lg-6 col-sm-12 col-xs-12">
@@ -43,16 +24,7 @@
     <div class="row">
         <div class="col-lg-6 col-sm-12 col-xs-12">
             <h1>{$ 'landing_prices' | translate $}</h1>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at imperdiet libero.
-                Nunc id lectus eget sem placerat hendrerit. In rhoncus metus nec metus venenatis, et hendrerit ex
-                rutrum. Etiam ultrices a mi sed tristique. Duis in dapibus diam. Mauris nisl erat, vestibulum sit amet
-                sem finibus, porta venenatis erat. Quisque at libero tristique, posuere augue in, dignissim enim. Sed
-                pharetra elementum nisl, non commodo leo bibendum nec. Nulla luctus augue non vehicula consequat. Etiam
-                sed magna ac lorem aliquam eleifend.</p>
-            <ul>
-                <li> Lorem ipsum dolor sit amet</li>
-                <li> Lorem ipsum dolor sit amet</li>
-            </ul>
+            <div ng-bind-html="what_we_offer"></div>
         </div>
         <div class="col-lg-6 col-sm-12 col-xs-12">
             <div class="row">
