@@ -1,6 +1,5 @@
 'use strict';
 
-
 var app = angular.module('hostelPaslek', [
     'ngRoute',
     'appServices',
@@ -28,6 +27,9 @@ var app = angular.module('hostelPaslek', [
 
             setActive();
             scope.$on('$locationChangeSuccess', setActive);
+            $('.nav a').click(function() {
+                $('.navbar-collapse').collapse('hide');
+            });
         }
     }
 }]); 
