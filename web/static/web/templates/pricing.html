@@ -1,21 +1,42 @@
 <div ng-controller="PricingController">
 
-    <div id="sidebar-wrapper">
+    <!--<div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <li ng-repeat="room in rooms">
                 <a id="{$ room.no $}" href="" ng-click="selectRoom(room.no)">{$ room.name $}</a>
             </li>
         </ul>
-    </div>
+    </div> -->
 
-    <div class="container-fluid room-main">
-        <div class="row">
+    <div class="container-fluid">
+        <!--<div class="row">
             <div class="col-lg-12">
                 <h1>{$ 'our_offerings' |translate $}</h1>
                 <div ng-bind-html="what_we_offer"></div>
             </div>
-        </div>
+        </div>-->
 
+
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item active">
+                        <a> {$ currentRoom.name $} </a>
+                    </li>
+                    <li role="presentation" class="dropdown navbar-right">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            Zobacz pokój <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item dropdown" ng-repeat="room in rooms">
+                                <a class="dropdown-item"
+                                   id="{$ room.no $}" href="" ng-click="selectRoom(room.no)">{$ room.name $}</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
         <!-- Room view -->
         <div class="row">
