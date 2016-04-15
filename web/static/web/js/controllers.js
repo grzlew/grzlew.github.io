@@ -66,6 +66,9 @@ appControllers.controller('PricingController', ['$scope', '$translate', '$sce', 
         } else {
             controller.galleryFotorama.load(currentRoom.images);
         }
+        $scope.getArray = function(size) {
+            return new Array(size);
+        }
     };
     $translateProvider(['offerings_page']).then(function (translations) {
         $scope.what_we_offer = $sce.trustAsHtml(translations.offerings_page);
