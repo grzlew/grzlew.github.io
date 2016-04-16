@@ -1,4 +1,4 @@
-var objectName = 'Hostel Pasłęk';
+var objectName = 'Apartamenty Kamienica';
 
 var messages_en = {
     objectName: objectName,
