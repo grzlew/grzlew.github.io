@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('hostelPaslek', [
+var app = angular.module('kamienicaPaslek', [
     'ngRoute',
     'appServices',
     'appControllers',
