@@ -1,6 +1,9 @@
 'use strict';
 
 var appControllers = angular.module('appControllers', []);
+var first = "pawel.chomnicki";
+var last = "gmail.com";
+var contact = first + '@' + last;
 
 appControllers.controller('MainController', ['$scope', '$translate', function ($scope, $translateProvider) {
     const lang_key = 'NG_TRANSLATE_LANG_KEY';
@@ -34,6 +37,7 @@ appControllers.controller('LandingController', ['$scope', '$translate', '$sce', 
             $scope.who_we_are = $sce.trustAsHtml(translations.landing_welcome_text);
             $scope.what_we_offer = $sce.trustAsHtml(translations.landing_offerings);
         });
+        $scope.contact = contact;
     }
 }]);
 
@@ -77,6 +81,7 @@ appControllers.controller('PricingController', ['$scope', '$translate', '$sce', 
 }]);
 
 appControllers.controller('ContactController', ['$scope', function ($scope) {
+    $scope.contact = contact;
 }]);
 
 appControllers.controller('NotFoundController', ['$scope', function ($scope) {
