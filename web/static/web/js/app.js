@@ -27,12 +27,14 @@ var app = angular.module('kamienicaPaslek', [
 
             setActive();
             scope.$on('$locationChangeSuccess', setActive);
-            $('.nav a').click(function() {
-                $('.navbar-collapse').collapse('hide');
+            $('.nav a').click(function (el) {
+                if (!el.toElement.classList.contains('no-collapse')) {
+                    $('.navbar-collapse').collapse('hide');
+                }
             });
         }
     }
-}]); 
+}]);
 
 app.config(['$routeProvider',
     function ($routeProvider) {
@@ -70,7 +72,7 @@ app.config(['$translateProvider', function ($translateProvider) {
     $translateProvider.fallbackLanguage('pl');
 }]);
 
-app.config(function($interpolateProvider) {
+app.config(function ($interpolateProvider) {
     $interpolateProvider.startSymbol('{$');
     $interpolateProvider.endSymbol('$}');
 });
