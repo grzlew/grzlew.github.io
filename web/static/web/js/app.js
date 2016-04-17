@@ -27,8 +27,8 @@ var app = angular.module('kamienicaPaslek', [
 
             setActive();
             scope.$on('$locationChangeSuccess', setActive);
-            $('.nav a').click(function (el) {
-                if (!el.toElement.classList.contains('no-collapse')) {
+            $('.nav a').on('click', function (ev) {
+                if (!ev.target.classList.contains('no-collapse')) {
                     $('.navbar-collapse').collapse('hide');
                 }
             });
