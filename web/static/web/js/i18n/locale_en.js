@@ -33,6 +33,10 @@ var messages_en = {
     '<p>We would like to invite you to visit Pasłęk and stay at the „Apartamenty KAMIENICA” tenement</p>' +
     '<div style="float:right"> <i>Lucyna i Paweł Chomniccy</i> </div>',
     our_offerings: 'Our offerings:',
-    offerings_page: ''
+    landing_offerings: '<p> We would like invite you to an tenement which was built most probably in 1830. In 2015 a general renovation of the building was carried out. ' +
+    'We leave available for guests the following:</p>  <ul>  ' +
+    '<li>Three apartments for 2 with a private bathroom – additional 2 beds can be arranged for any given room.  </li>' +
+    '<li>One 2 bed room with private bathrom.</li>' +
+    '<li>A common-room with kitchenette: coffee machine, microwave oven, fridges, dishwasher, and an induction hob.</li> </ul>'
 };
 
