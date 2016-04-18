@@ -1,7 +1,7 @@
 'use strict';
 
 var appControllers = angular.module('appControllers', []);
-var first = "pawel.chomnicki";
+var first = "kamienicapaslek";
 var last = "gmail.com";
 var contact = first + '@' + last;
 
@@ -89,7 +89,7 @@ appControllers.controller('PricingController', ['$scope', '$translate', '$sce', 
         setActive(roomId);
     };
 
-    setActive(0);
+    setActive(1);
 
     $translateProvider(['offerings_page']).then(function (translations) {
         $scope.what_we_offer = $sce.trustAsHtml(translations.offerings_page);
