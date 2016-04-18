@@ -88,9 +88,7 @@ appControllers.controller('PricingController', ['$scope', '$translate', '$sce', 
         };
         setActive(roomId);
     };
-
-    setActive(1);
-
+    
     $translateProvider(['offerings_page']).then(function (translations) {
         $scope.what_we_offer = $sce.trustAsHtml(translations.offerings_page);
     });
