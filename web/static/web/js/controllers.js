@@ -6,7 +6,7 @@ var last = "gmail.com";
 var contact = first + '@' + last;
 
 appControllers.controller('MainController', ['$scope', '$translate', function ($scope, $translateProvider) {
-    const lang_key = 'NG_TRANSLATE_LANG_KEY';
+    var lang_key = 'NG_TRANSLATE_LANG_KEY';
 
     var switchLocale = function (localeKey) {
         $translateProvider.use(localeKey);

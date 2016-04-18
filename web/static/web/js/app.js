@@ -15,7 +15,7 @@ var app = angular.module('kamienicaPaslek', [
                 if (path) {
                     angular.forEach(element.find('li'), function (li) {
                         var anchor = li.querySelector('a');
-                        const activeClass = 'active';
+                        var  activeClass = 'active';
                         if (anchor.href.match('#' + path + '(?=\\?|$)')) {
                             angular.element(li).addClass(activeClass);
                         } else {
