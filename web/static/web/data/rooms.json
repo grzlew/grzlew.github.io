@@ -4,7 +4,7 @@
     "name": "Apartament z ogrodem",
     "prices": [
       {"people": 1, "price": 180},
-      {"people": 2, "price": 220},
+      {"people": 2, "price": 240},
       {"people": 3, "price": 300}
     ],
     "desc": "Apartament na parterze o powierzchni 44m2 z własnym tarasem (o powierzchni 10m2) i bezpośrednim wyjściem do ogrodu. W skład apartamentu wchodzi: pokój dzienny z sofą (dodatkowe miejsce dla jednej osoby), sypialnia z dwoma komfortowymi łóżkami oraz łazienka.",
@@ -16,12 +16,12 @@
   },
   {
     "no": 1,
-    "name": "Dwupoziomowy apartament tarasem",
+    "name": "Apartament z tarasem",
     "prices": [
       {"people": 1, "price": 180},
-      {"people": 2, "price": 220},
+      {"people": 2, "price": 240},
       {"people": 3, "price": 300},
-      {"people": 4, "price": 460}
+      {"people": 4, "price": 360}
     ],
     "desc": "Apartament o powierzchni 49m2 z  bezpośrednim wyjściem na słoneczny taras z widokiem na wzgórze zamkowe, znajdujący się na I piętrze kamienicy. Na pierwszym poziomie znajduje się pokój dzienny z łazienką wyposażony w rozkładaną sofę, która może służyć jako dodatkowe miejsce do spania dla dwóch osób. Na drugim poziomie (poddaszu) znajduje się kameralna sypialnia, w której znajdziemy dwa komfortowe łóżka z możliwością ich łączenia, na życzenie gości.",
     "images": [
@@ -34,10 +34,10 @@
   },
   {
     "no": 2,
-    "name": "Apartament z widokiem na stare miasto",
+    "name": "Apartament wschodni",
     "prices": [
       {"people": 1, "price": 180},
-      {"people": 2, "price": 220},
+      {"people": 2, "price": 240},
       {"people": 3, "price": 300},
       {"people": 4, "price": 360}
     ],

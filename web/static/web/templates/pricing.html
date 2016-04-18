@@ -4,13 +4,13 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="navbar-header">
-                    <a class="navbar-toggle collapsed dropdown" data-toggle="collapse"data-target="#room-navbar" aria-expanded="false">
+                    <a class="navbar-toggle collapsed" data-toggle="collapse" data-target="#room-navbar" aria-expanded="false">
                         Wybierz pokój <span class="caret"></span>
                     </a>
                 </div>
-                <ul class="nav nav-tabs collapse navbar-collapse" id="room-navbar">
-                    <li class="nav-item dropdown" ng-repeat="room in rooms">
-                        <a id="{$ room.no $}" href="" ng-click="selectRoom(room.no)">{$ room.name $}</a>
+                <ul class="nav nav-tabs collapse navbar-collapse nav-justified" id="room-navbar" auto-active>
+                    <li class="nav-item" ng-repeat="room in rooms">
+                        <a href="" ng-click="selectRoom(room.no)">{$ room.name $}</a>
                     </li>
                 </ul>
             </div>

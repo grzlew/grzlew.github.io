@@ -57,6 +57,19 @@ appControllers.controller('PricingController', ['$scope', '$translate', '$sce', 
         }
     });
 
+    var setActive = function (id) {
+        $('.nav-item').each(function (index, li) {
+            var activeClass = 'active';
+
+            if (index === id) {
+                $(li).addClass(activeClass);
+            } else {
+                $(li).removeClass(activeClass);
+            }
+        });
+    };
+
+
     $scope.rooms = this.rooms;
 
     $scope.selectRoom = function (roomId) {
@@ -70,10 +83,14 @@ appControllers.controller('PricingController', ['$scope', '$translate', '$sce', 
         } else {
             controller.galleryFotorama.load(currentRoom.images);
         }
-        $scope.getArray = function(size) {
+        $scope.getArray = function (size) {
             return new Array(size);
-        }
+        };
+        setActive(roomId);
     };
+
+    setActive(0);
+
     $translateProvider(['offerings_page']).then(function (translations) {
         $scope.what_we_offer = $sce.trustAsHtml(translations.offerings_page);
     });
