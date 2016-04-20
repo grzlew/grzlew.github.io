@@ -38,7 +38,9 @@ appControllers.controller('LandingController', ['$scope', '$translate', '$sce', 
             $scope.what_we_offer = $sce.trustAsHtml(translations.landing_offerings);
         });
         $scope.contact = contact;
-    }
+    };
+    ga('set', 'page', '/landing_page.html');
+    ga('send', 'pageview');
 }]);
 
 appControllers.controller('GalleryController', ['$scope', function ($scope) {
@@ -46,7 +48,9 @@ appControllers.controller('GalleryController', ['$scope', function ($scope) {
         $(function () {
             $('.fotorama').fotorama();
         });
-    }
+    };
+    ga('set', 'page', '/gallery.html');
+    ga('send', 'pageview');
 }]);
 
 appControllers.controller('PricingController', ['$scope', '$translate', '$sce', 'Room', function ($scope, $translateProvider, $sce, Room) {
@@ -93,12 +97,17 @@ appControllers.controller('PricingController', ['$scope', '$translate', '$sce', 
         $scope.what_we_offer = $sce.trustAsHtml(translations.offerings_page);
     });
 
+    ga('set', 'page', '/pricing.html');
+    ga('send', 'pageview');
 }]);
 
 appControllers.controller('ContactController', ['$scope', function ($scope) {
     $scope.contact = contact;
+    ga('set', 'page', '/contact.html');
+    ga('send', 'pageview');
 }]);
 
 appControllers.controller('NotFoundController', ['$scope', function ($scope) {
-
+    ga('set', 'page', '/notfound.html');
+    ga('send', 'pageview');
 }]);
