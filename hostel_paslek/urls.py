@@ -29,5 +29,4 @@ router.register(r'news', NewsViewSet)
 urlpatterns = [
     url(r'^$', IndexView.as_view(), name="index"),
     url(r'^', include(router.urls)),
-    url(r'^admin/', include(admin.site.urls)),
 ]
