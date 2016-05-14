@@ -28,7 +28,7 @@ var messages_pl = {
     contact_localization: 'Lokalizacja',
 
     navbar_mainPageNavLink: 'Strona Główna',
-    navbar_pricingNavLink: 'Oferta',
+    navbar_pricingNavLink: 'Pokoje',
     navbar_galleryNavLink: 'Galeria',
     navbar_contactNavLink: 'Kontakt',
     landing_welcome_text: '<p>W Pasłęku mieszkamy od 1986r. i wciąż pozostajemy pod urokiem tego miasta, jego mieszkańców, a także okolicznych atrakcji. Nasza fascynacja Pasłękiem i okolicami skłoniła nas do stworzenia miejsca w którym turyści mogliby poczuć atmosferę naszego niewielkiego, lecz tętniącego życiem miasteczka. Miejscem tym są Apartamenty KAMIENICA.</p>' +
