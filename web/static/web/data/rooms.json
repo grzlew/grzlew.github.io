@@ -1,6 +1,23 @@
 [
   {
-    "no": 0,
+  "no": 0,
+  "name": "Pokój na poddaszu",
+  "prices": [
+    {"people": 1, "price": 119},
+    {"people": 2, "price": 169}
+  ],
+  "desc": "Najbardziej kameralne miejsce w kamienicy. Gustownie urządzony, jasny, dwuosobowy pokój na poddaszu z łazienką. Całość o powierzchni 19m2.",
+  "images": [
+    {"img":"static/web/img/room4/pokoj_poddasze1.jpg", "thumb":"static/web/img/room4/pokoj_poddasze1_thumb.jpg"},
+    {"img":"static/web/img/room4/pokoj_poddasze2.jpg", "thumb":"static/web/img/room4/pokoj_poddasze2_thumb.jpg"},
+    {"img":"static/web/img/room4/pokoj_poddasze3.jpg", "thumb":"static/web/img/room4/pokoj_poddasze3_thumb.jpg"},
+    {"img":"static/web/img/room4/pokoj_poddasze4.jpg", "thumb":"static/web/img/room4/pokoj_poddasze4_thumb.jpg"},
+    {"img":"static/web/img/room4/pokoj_poddasze5.jpg", "thumb":"static/web/img/room4/pokoj_poddasze5_thumb.jpg"}
+  ],
+  "landing_thumbnail" :"static/web/img/room4/pokoj_poddasze1.jpg"
+  },
+  {
+    "no": 1,
     "name": "Apartament z tarasem",
     "prices": [
       {"people": 1, "price": 149},
@@ -19,7 +36,7 @@
     "landing_thumbnail" :"static/web/img/room2/pokoj_taras1.jpg"
   },
   {
-    "no": 1,
+    "no": 2,
     "name": "Apartament wschodni",
     "prices": [
       {"people": 1, "price": 149},
@@ -36,23 +53,5 @@
       {"img":"static/web/img/room3/pokoj_miasto5.jpg", "thumb":"static/web/img/room3/pokoj_miasto5_thumb.jpg"}
     ],
     "landing_thumbnail" :"static/web/img/room3/pokoj_miasto1.jpg"
-  },
-  {
-    "no": 2,
-    "name": "Pokój na poddaszu",
-    "prices": [
-      {"people": 1, "price": 119},
-      {"people": 2, "price": 169}
-    ],
-    "desc": "Najbardziej kameralne miejsce w kamienicy. Gustownie urządzony, jasny, dwuosobowy pokój na poddaszu z łazienką. Całość o powierzchni 19m2.",
-    "images": [
-      {"img":"static/web/img/room4/pokoj_poddasze1.jpg", "thumb":"static/web/img/room4/pokoj_poddasze1_thumb.jpg"},
-      {"img":"static/web/img/room4/pokoj_poddasze2.jpg", "thumb":"static/web/img/room4/pokoj_poddasze2_thumb.jpg"},
-      {"img":"static/web/img/room4/pokoj_poddasze3.jpg", "thumb":"static/web/img/room4/pokoj_poddasze3_thumb.jpg"},
-      {"img":"static/web/img/room4/pokoj_poddasze4.jpg", "thumb":"static/web/img/room4/pokoj_poddasze4_thumb.jpg"},
-      {"img":"static/web/img/room4/pokoj_poddasze5.jpg", "thumb":"static/web/img/room4/pokoj_poddasze5_thumb.jpg"}
-    ],
-    "landing_thumbnail" :"static/web/img/room4/pokoj_poddasze1.jpg"
   }
-
 ]
