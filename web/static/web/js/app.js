@@ -55,6 +55,10 @@ app.config(['$routeProvider',
                 templateUrl: 'static/web/templates/contact.html',
                 controller: 'ContactController'
             }).
+            when('/about', {
+                templateUrl: 'static/web/templates/about.html',
+                controller: 'AboutController'
+            }).
             when('/', {
                 redirectTo: '/landing-page'
             }).

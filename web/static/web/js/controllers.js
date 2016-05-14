@@ -120,6 +120,16 @@ appControllers.controller('ContactController', ['$scope', function ($scope) {
     ga('send', 'pageview');
 }]);
 
+appControllers.controller('AboutController', ['$scope', '$sce', '$translate', function ($scope, $sce, $translateProvider) {
+    $scope.init = function () {
+        $translateProvider(['landing_welcome_text']).then(function (translations) {
+            $scope.who_we_are = $sce.trustAsHtml(translations.landing_welcome_text);
+        });
+    };
+    ga('set', 'page', '/about.html');
+    ga('send', 'pageview');
+}]);
+
 appControllers.controller('NotFoundController', ['$scope', function ($scope) {
     ga('set', 'page', '/notfound.html');
     ga('send', 'pageview');
