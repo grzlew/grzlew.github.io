@@ -2,9 +2,8 @@
 
     <div class="row">
         <div class="col-lg-6 col-sm-12 col-xs-12">
-            <h1>{$ 'landing_welcome' | translate $}</h1>
-            <div ng-bind-html="who_we_are">
-            </div>
+            <h1>{$ 'our_offerings' | translate $}</h1>
+            <div ng-bind-html="what_we_offer"></div>
         </div>
 
         <div class="col-lg-6 col-sm-12 col-xs-12">
@@ -13,8 +12,8 @@
                  data-fit="scaledown"
                  data-loop="true"
                  data-nav="thumbs">
+                <img src="static/web/img/landing/landing0.jpg" data-thumb="static/web/img/landing/landing0_thumb.jpg">
                 <img src="static/web/img/landing/landing1.jpg" data-thumb="static/web/img/landing/landing1_thumb.jpg">
-                <img src="static/web/img/landing/landing2.jpg" data-thumb="static/web/img/landing/landing2_thumb.jpg">
                 <img src="static/web/img/landing/landing3.jpg" data-thumb="static/web/img/landing/landing3_thumb.jpg">
                 <img src="static/web/img/landing/landing4.jpg" data-thumb="static/web/img/landing/landing4_thumb.jpg">
             </div>
@@ -22,8 +21,9 @@
     </div>
     <div class="row">
         <div class="col-lg-6 col-sm-12 col-xs-12">
-            <h1>{$ 'our_offerings' | translate $}</h1>
-            <div ng-bind-html="what_we_offer"></div>
+            <h1>{$ 'landing_welcome' | translate $}</h1>
+            <div ng-bind-html="who_we_are">
+            </div>
         </div>
         <div class="col-lg-6 col-sm-12 col-xs-12">
             <div class="row">
