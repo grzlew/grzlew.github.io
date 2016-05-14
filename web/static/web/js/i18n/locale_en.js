@@ -32,6 +32,7 @@ var messages_en = {
     navbar_contactNavLink: 'Contact',
     landing_welcome: 'Who we are?',
     landing_contact: "Contact us",
+    landing_thumbnail_details: "Details",
     landing_welcome_text: '<p>We have lived in Pasłęk since 1986 and we are still under the spell of this town, its inhabitants, and the neighbouring sights. Our facsination with Pasłęk and its surroundings made us establish a place where tourists can feel the atmosphere of our small but vibrant town. We called this place as „Apartamenty KAMIENICA”</p>' +
     '<p>Situated in the centre of the old town, „Apartamenty KAMIENICA” is a perfect staging place for the tourists who want to learn about the history and culture of the meeting point of Warmia, Żuławy, and the Iławskie Lakes. The historic tenement, which was restored in 2016, is to serve as a quiet and safe haven to those who are coming here to play golf at the nearby Sand Valley Golf Course, horse ride in Rzeczna stud farm, take a boat cruise on the Elbląg Canal, or listen to organ music in St. Bartholomeus’s church located only 50 meters away. The location of Pasłęk also allows for a quick and easy access to Gdańsk, Elbląg, and Olsztyn.</p>' +
     '<p>We would like to invite you to visit Pasłęk and stay at the „Apartamenty KAMIENICA” tenement</p>' +
