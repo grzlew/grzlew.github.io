@@ -26,9 +26,13 @@ appControllers.controller('MainController', ['$scope', '$translate', function ($
     };
 
     $translateProvider.use(currentLocale());
+    $scope.showIntro = function () {
+        var hash = window.location.hash.substring(1);
+        return hash === "/landing-page";
+    }
 }]);
 
-appControllers.controller('LandingController', ['$scope', '$translate', '$sce', function ($scope, $translateProvider, $sce) {
+appControllers.controller('LandingController', ['$scope', '$translate', '$sce', 'Room', function ($scope, $translateProvider, $sce, Room) {
     $scope.init = function () {
         $(function () {
             $('.fotorama').fotorama();
@@ -38,6 +42,10 @@ appControllers.controller('LandingController', ['$scope', '$translate', '$sce', 
             $scope.what_we_offer = $sce.trustAsHtml(translations.landing_offerings);
         });
         $scope.contact = contact;
+    };
+    $scope.rooms = Room.query();
+    $scope.getArray = function (size) {
+        return new Array(size);
     };
     ga('set', 'page', '/landing_page.html');
     ga('send', 'pageview');
@@ -53,53 +61,58 @@ appControllers.controller('GalleryController', ['$scope', function ($scope) {
     ga('send', 'pageview');
 }]);
 
-appControllers.controller('PricingController', ['$scope', '$translate', '$sce', 'Room', function ($scope, $translateProvider, $sce, Room) {
-    var controller = this;
-    controller.rooms = Room.query([], function (data) {
-        if (data.length > 0) {
-            $scope.selectRoom(0);
-        }
-    });
-
-    var setActive = function (id) {
-        $('.nav-item').each(function (index, li) {
-            var activeClass = 'active';
-
-            if (index === id) {
-                $(li).addClass(activeClass);
-            } else {
-                $(li).removeClass(activeClass);
+appControllers.controller('PricingController', ['$scope', '$translate', '$sce', '$routeParams', 'Room',
+    function ($scope, $translateProvider, $sce, $routeParams, Room) {
+        var controller = this;
+        controller.rooms = Room.query([], function (data) {
+            if (data.length > 0) {
+                var selected = parseInt($routeParams.id);
+                if (isNaN(selected) || selected > data.length) {
+                    selected = 0
+                }
+                $scope.selectRoom(selected);
             }
         });
-    };
 
+        var setActive = function (id) {
+            $('.nav-item').each(function (index, li) {
+                var activeClass = 'active';
 
-    $scope.rooms = this.rooms;
-
-    $scope.selectRoom = function (roomId) {
-        var currentRoom = controller.rooms[roomId];
-        $scope.currentRoom = currentRoom;
-
-        if (controller.galleryFotorama === undefined) {
-            var $gallery = $("#room-fotorama");
-            var gallery = $gallery.fotorama({data: currentRoom.images});
-            controller.galleryFotorama = gallery.data('fotorama');
-        } else {
-            controller.galleryFotorama.load(currentRoom.images);
-        }
-        $scope.getArray = function (size) {
-            return new Array(size);
+                if (index === id) {
+                    $(li).addClass(activeClass);
+                } else {
+                    $(li).removeClass(activeClass);
+                }
+            });
         };
-        setActive(roomId);
-    };
-    
-    $translateProvider(['offerings_page']).then(function (translations) {
-        $scope.what_we_offer = $sce.trustAsHtml(translations.offerings_page);
-    });
 
-    ga('set', 'page', '/pricing.html');
-    ga('send', 'pageview');
-}]);
+
+        $scope.rooms = this.rooms;
+
+        $scope.selectRoom = function (roomId) {
+            var currentRoom = controller.rooms[roomId];
+            $scope.currentRoom = currentRoom;
+
+            if (controller.galleryFotorama === undefined) {
+                var $gallery = $("#room-fotorama");
+                var gallery = $gallery.fotorama({data: currentRoom.images});
+                controller.galleryFotorama = gallery.data('fotorama');
+            } else {
+                controller.galleryFotorama.load(currentRoom.images);
+            }
+            $scope.getArray = function (size) {
+                return new Array(size);
+            };
+            setActive(roomId);
+        };
+
+        $translateProvider(['offerings_page']).then(function (translations) {
+            $scope.what_we_offer = $sce.trustAsHtml(translations.offerings_page);
+        });
+
+        ga('set', 'page', '/pricing.html');
+        ga('send', 'pageview');
+    }]);
 
 appControllers.controller('ContactController', ['$scope', function ($scope) {
     $scope.contact = contact;

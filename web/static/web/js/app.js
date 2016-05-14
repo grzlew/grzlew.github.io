@@ -47,7 +47,7 @@ app.config(['$routeProvider',
                 templateUrl: 'static/web/templates/gallery.html',
                 controller: 'GalleryController'
             }).
-            when('/pricing', {
+            when('/pricing/:id?', {
                 templateUrl: 'static/web/templates/pricing.html',
                 controller: 'PricingController'
             }).

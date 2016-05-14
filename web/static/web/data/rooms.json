@@ -15,7 +15,8 @@
       {"img":"static/web/img/room2/pokoj_taras3.jpg", "thumb":"static/web/img/room2/pokoj_taras3_thumb.jpg"},
       {"img":"static/web/img/room2/pokoj_taras4.jpg", "thumb":"static/web/img/room2/pokoj_taras4_thumb.jpg"},
       {"img":"static/web/img/room2/pokoj_taras5.jpg", "thumb":"static/web/img/room2/pokoj_taras5_thumb.jpg"}
-    ]
+    ],
+    "landing_thumbnail" :"static/web/img/room2/pokoj_taras1.jpg"
   },
   {
     "no": 1,
@@ -33,7 +34,8 @@
       {"img":"static/web/img/room3/pokoj_miasto3.jpg", "thumb":"static/web/img/room3/pokoj_miasto3_thumb.jpg"},
       {"img":"static/web/img/room3/pokoj_miasto4.jpg", "thumb":"static/web/img/room3/pokoj_miasto4_thumb.jpg"},
       {"img":"static/web/img/room3/pokoj_miasto5.jpg", "thumb":"static/web/img/room3/pokoj_miasto5_thumb.jpg"}
-    ]
+    ],
+    "landing_thumbnail" :"static/web/img/room3/pokoj_miasto1.jpg"
   },
   {
     "no": 2,
@@ -49,7 +51,8 @@
       {"img":"static/web/img/room4/pokoj_poddasze3.jpg", "thumb":"static/web/img/room4/pokoj_poddasze3_thumb.jpg"},
       {"img":"static/web/img/room4/pokoj_poddasze4.jpg", "thumb":"static/web/img/room4/pokoj_poddasze4_thumb.jpg"},
       {"img":"static/web/img/room4/pokoj_poddasze5.jpg", "thumb":"static/web/img/room4/pokoj_poddasze5_thumb.jpg"}
-    ]
+    ],
+    "landing_thumbnail" :"static/web/img/room4/pokoj_poddasze1.jpg"
   }
 
 ]

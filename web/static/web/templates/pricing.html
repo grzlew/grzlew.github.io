@@ -9,7 +9,7 @@
                     </a>
                 </div>
                 <ul class="nav nav-tabs collapse navbar-collapse nav-justified" id="room-navbar">
-                    <li class="nav-item" ng-class="{active: $index == 0}" ng-repeat="room in rooms">
+                    <li class="nav-item" ng-class="{active: $index == currentRoom.no}" ng-repeat="room in rooms">
                         <a href="" ng-click="selectRoom(room.no)">{$ room.name $}</a>
                     </li>
                 </ul>
@@ -29,7 +29,7 @@
                 </p>
             </div>
             <div class="col-lg-6">
-                <table class="table table-condensed">
+                <table class="table table-condensed table-hover">
                     <tr>
                         <th colspan="2">
                             Cena

@@ -35,7 +35,7 @@ var messages_pl = {
     '<p>Położone w samym sercu starego miasta, Apartamenty KAMIENICA są doskonałą bazą wypadową dla turystów pragnących poznać historię i kulturę skraju Warmii, Żuław i Pojezierza Iławskiego. Odrestaurowana w 2015 roku kamienica ma służyć za spokojną przystań tym, którzy chcą zagrać w golfa na pobliskim polu Sand Valley, pojeździć konno w stadninie w Rzecznej, wybrać się na rejs po kanale Elbląskim, czy też posłuchać muzyki organowej w oddalonym o 50 metrów kościele św. Bartłomieja. Położenie Pasłęka pozwala również naszym gościom na łatwy i szybki dojazd do Gdańska, Elbląga i Olsztyna.</p>' +
     '<p>Zachęcamy Was do odwiedzenia Pasłęka i skorzystania z naszej oferty noclegowej</p>' +
     '<div style="float:right"> <i>Lucyna i Paweł Chomniccy</i> </div>',
-    landing_offerings: '<p> Chcielbyśmy zaprosić Państwa do kamienicy wybudowanej w okolicach roku 1830 poddanej generalnemu remontowi w roku 2015. Do dyspozycji' +
+    landing_offerings: '<p> Chcielbyśmy zaprosić Państwa do kamienicy wybudowanej w XIX w. poddanej generalnemu remontowi w roku 2016. Do dyspozycji' +
     'gości oferujemy:</p>  <ul>  ' +
     '<li>Trzy dwupokojowe apartamenty z łazienką – sypialnia dla 2 osób + dostawka w pokoju dziennym dla maksymalnie dwóch osób.  </li>' +
     '<li>Jeden dwuosobowy pokój z łazienką.</li>' +

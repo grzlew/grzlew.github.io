@@ -101,9 +101,22 @@
         </div>
     </div>
 </nav>
-<div class="container" ng-controller="MainController">
-    <div class="col-lg-12 col-md-12 col-sm-12 main main-content">
-        <div ng-view></div>
+<div ng-controller="MainController">
+    <header class="intro-header" ng-show="showIntro()"
+            style="background-image: url('static/web/img/landing/landing0.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="col-lg-12 col-md-12 col-sm-12 main main-content">
+            <div ng-view></div>
+        </div>
     </div>
 </div>
 </body>
