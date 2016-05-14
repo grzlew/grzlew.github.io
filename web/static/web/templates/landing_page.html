@@ -2,7 +2,9 @@
     <div class="row">
         <div class="col-sm-6 col-md-4" ng-repeat="room in rooms">
             <div class="thumbnail">
-                <img src="{$ room.landing_thumbnail $}">
+                <a href="#/room-prices/{$ room.no $}">
+                    <img src="{$ room.landing_thumbnail $}">
+                </a>
 
                 <div class="caption">
                     <h3>{$ room.name $}</h3>
