@@ -172,3 +172,7 @@
 .intro-hidden {
     display: none;
 }
+
+.landing-padding {
+    margin-top: -30px;
+}
