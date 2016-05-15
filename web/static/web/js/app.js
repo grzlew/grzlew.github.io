@@ -6,6 +6,9 @@ var app = angular.module('kamienicaPaslek', [
     'appControllers',
     'pascalprecht.translate'
 ]).directive('autoActive', ['$location', function ($location) {
+    var match = function (anchor, path) {
+        return anchor.href.match('#' + path + '(?=\\?|$)') || (anchor.href.indexOf('/room-prices') != -1 && path.indexOf('/room-prices/') != -1);
+    };
     return {
         restrict: 'A',
         scope: false,
@@ -15,8 +18,8 @@ var app = angular.module('kamienicaPaslek', [
                 if (path) {
                     angular.forEach(element.find('li'), function (li) {
                         var anchor = li.querySelector('a');
-                        var  activeClass = 'active';
-                        if (anchor.href.match('#' + path + '(?=\\?|$)')) {
+                        var activeClass = 'active';
+                        if (match(anchor, path)) {
                             angular.element(li).addClass(activeClass);
                         } else {
                             angular.element(li).removeClass(activeClass);
