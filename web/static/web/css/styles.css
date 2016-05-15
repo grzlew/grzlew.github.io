@@ -46,8 +46,8 @@
     left: 0;
 }
 
-.room-main {
-    padding-left: 250px;
+.pricing-fotorama {
+    margin-bottom: 25px;
 }
 
 #sidebar-wrapper {
@@ -176,3 +176,4 @@
 .landing-padding {
     margin-top: -30px;
 }
+
