@@ -119,11 +119,24 @@
 }
 
 .landing-room-container {
-    height: 124px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.landing-room {
+    display: flex;
 }
 
-.landing-room-details-btn {
-    float: right;
+@media all and (max-width: 800px) {
+    .navigation {
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .navigation {
+        flex-direction: column;
+    }
 }
 
 .intro-header {

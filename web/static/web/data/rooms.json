@@ -53,5 +53,24 @@
       {"img":"static/web/img/room3/pokoj_miasto5.jpg", "thumb":"static/web/img/room3/pokoj_miasto5_thumb.jpg"}
     ],
     "landing_thumbnail" :"static/web/img/room3/pokoj_miasto1.jpg"
+  },
+  {
+    "no": 3,
+    "name": "Apartament z patio",
+    "prices": [
+      {"people": 1, "price": "149 zł"},
+      {"people": 2, "price": "199 zł"},
+      {"people": 3, "price": "249 zł"},
+      {"people": 4, "price": "299 zł"}
+    ],
+    "desc": "Apartament na parterze o powierzchni 44m2 z własnym tarasem (o pow",
+    "images": [
+      {"img":"static/web/img/room3/pokoj_miasto1.jpg", "thumb":"static/web/img/room3/pokoj_miasto1_thumb.jpg"},
+      {"img":"static/web/img/room3/pokoj_miasto2.jpg", "thumb":"static/web/img/room3/pokoj_miasto2_thumb.jpg"},
+      {"img":"static/web/img/room3/pokoj_miasto3.jpg", "thumb":"static/web/img/room3/pokoj_miasto3_thumb.jpg"},
+      {"img":"static/web/img/room3/pokoj_miasto4.jpg", "thumb":"static/web/img/room3/pokoj_miasto4_thumb.jpg"},
+      {"img":"static/web/img/room3/pokoj_miasto5.jpg", "thumb":"static/web/img/room3/pokoj_miasto5_thumb.jpg"}
+    ],
+    "landing_thumbnail" :"static/web/img/room3/pokoj_miasto1.jpg"
   }
 ]
