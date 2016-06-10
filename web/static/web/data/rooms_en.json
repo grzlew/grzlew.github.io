@@ -31,7 +31,8 @@
       {"img":"static/web/img/room2/pokoj_taras2.jpg", "thumb":"static/web/img/room2/pokoj_taras2_thumb.jpg"},
       {"img":"static/web/img/room2/pokoj_taras3.jpg", "thumb":"static/web/img/room2/pokoj_taras3_thumb.jpg"},
       {"img":"static/web/img/room2/pokoj_taras4.jpg", "thumb":"static/web/img/room2/pokoj_taras4_thumb.jpg"},
-      {"img":"static/web/img/room2/pokoj_taras5.jpg", "thumb":"static/web/img/room2/pokoj_taras5_thumb.jpg"}
+      {"img":"static/web/img/room2/pokoj_taras5.jpg", "thumb":"static/web/img/room2/pokoj_taras5_thumb.jpg"},
+      {"img":"static/web/img/room2/pokoj_taras6.jpg", "thumb":"static/web/img/room2/pokoj_taras6_thumbnail.jpg"}
     ],
     "landing_thumbnail" :"static/web/img/room2/pokoj_taras1.jpg"
   },
@@ -63,14 +64,14 @@
       {"people": 3, "price": "249 zł"},
       {"people": 4, "price": "299 zł"}
     ],
-    "desc": "Apartament na parterze o powierzchni 44m2 z własnym tarasem (o pow",
+    "desc": "Apartament nr 1 z patio – Apartament na parterze o powierzchni 44m2 z własnym tarasem (o powierzchni 10m2) i bezpośrednim wyjściem na patio. W skład apartamentu wchodzi: pokój dzienny z sofą (dodatkowe miejsce dla dwóch osób), sypialnia z dwoma komfortowymi łóżkami oraz łazienka.",
     "images": [
-      {"img":"static/web/img/room3/pokoj_miasto1.jpg", "thumb":"static/web/img/room3/pokoj_miasto1_thumb.jpg"},
-      {"img":"static/web/img/room3/pokoj_miasto2.jpg", "thumb":"static/web/img/room3/pokoj_miasto2_thumb.jpg"},
-      {"img":"static/web/img/room3/pokoj_miasto3.jpg", "thumb":"static/web/img/room3/pokoj_miasto3_thumb.jpg"},
-      {"img":"static/web/img/room3/pokoj_miasto4.jpg", "thumb":"static/web/img/room3/pokoj_miasto4_thumb.jpg"},
-      {"img":"static/web/img/room3/pokoj_miasto5.jpg", "thumb":"static/web/img/room3/pokoj_miasto5_thumb.jpg"}
+      {"img":"static/web/img/room_patio/pokoj_patio1.jpg", "thumb":"static/web/img/room_patio/pokoj_patio1_thumbnail.jpg"},
+      {"img":"static/web/img/room_patio/pokoj_patio2.jpg", "thumb":"static/web/img/room_patio/pokoj_patio2_thumbnail.jpg"},
+      {"img":"static/web/img/room_patio/pokoj_patio4.jpg", "thumb":"static/web/img/room_patio/pokoj_patio4_thumbnail.jpg"},
+      {"img":"static/web/img/room_patio/pokoj_patio5.jpg", "thumb":"static/web/img/room_patio/pokoj_patio5_thumbnail.jpg"},
+      {"img":"static/web/img/room_patio/pokoj_patio7.jpg", "thumb":"static/web/img/room_patio/pokoj_patio7_thumbnail.jpg"}
     ],
-    "landing_thumbnail" :"static/web/img/room3/pokoj_miasto1.jpg"
+    "landing_thumbnail" :"static/web/img/room_patio/pokoj_patio5.jpg"
   }
 ]
