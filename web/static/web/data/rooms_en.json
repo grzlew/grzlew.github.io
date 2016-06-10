@@ -1,64 +1,76 @@
 [
   {
     "no": 0,
-    "name": "Apartament z ogrodem",
-    "prices": [
-      {"people": 1, "price": 180},
-      {"people": 2, "price": 220},
-      {"people": 3, "price": 300}
-    ],
-    "desc": "Apartament na parterze o powierzchni 44m2 z własnym tarasem (o powierzchni 10m2) i bezpośrednim wyjściem do ogrodu. W skład apartamentu wchodzi: pokój dzienny z sofą (dodatkowe miejsce dla jednej osoby), sypialnia z dwoma komfortowymi łóżkami oraz łazienka.",
-    "images": [
-      {"img": "static/web/img/02.jpg"},
-      {"img": "static/web/img/03.jpg"},
-      {"img": "static/web/img/06.jpg"}
-    ]
-  },
-  {
-    "no": 1,
-    "name": "Dwupoziomowy apartament tarasem",
-    "prices": [
-      {"people": 1, "price": 180},
-      {"people": 2, "price": 220},
-      {"people": 3, "price": 300},
-      {"people": 4, "price": 460}
-    ],
-    "desc": "Apartament o powierzchni 49m2 z  bezpośrednim wyjściem na słoneczny taras z widokiem na wzgórze zamkowe, znajdujący się na I piętrze kamienicy. Na pierwszym poziomie znajduje się pokój dzienny z łazienką wyposażony w rozkładaną sofę, która może służyć jako dodatkowe miejsce do spania dla dwóch osób. Na drugim poziomie (poddaszu) znajduje się kameralna sypialnia, w której znajdziemy dwa komfortowe łóżka z możliwością ich łączenia, na życzenie gości.",
-    "images": [
-      {"img":"static/web/img/14.jpg"},
-      {"img":"static/web/img/15.jpg"},
-      {"img":"static/web/img/DSC_5415.jpg"}
-    ]
-  },
-  {
-    "no": 2,
-    "name": "Apartament z widokiem na stare miasto",
-    "prices": [
-      {"people": 1, "price": 180},
-      {"people": 2, "price": 220},
-      {"people": 3, "price": 300},
-      {"people": 4, "price": 360}
-    ],
-    "desc": "Apartament o powierzchni 45m2 z widokiem na Stare Miasto. Apartament znajduje się na I piętrze kamienicy. Pokój dzienny z łazienką znajduje się jednym poziomie a z salonu prowadzą schody do kameralnej sypialni na poddaszu. W sypialni znajdziemy dwa komfortowe łóżka które na życzenie gości mogą być łączone. W pokoju dziennym znajduje się rozkładana sofa, która może służyć jako dodatkowe miejsce spania dla dwojga.",
-    "images": [
-      {"img":"static/web/img/11.jpg"},
-      {"img":"static/web/img/10.jpg"},
-      {"img":"static/web/img/08.jpg"}
-    ]
-  },
-  {
-    "no": 3,
     "name": "Pokój na poddaszu",
     "prices": [
-      {"people": 1, "price": 120},
-      {"people": 2, "price": 200}
+      {"people": 1, "price": "119 zł"},
+      {"people": 2, "price": "169 zł"}
     ],
     "desc": "Najbardziej kameralne miejsce w kamienicy. Gustownie urządzony, jasny, dwuosobowy pokój na poddaszu z łazienką. Całość o powierzchni 19m2.",
     "images": [
-      {"img":"static/web/img/11.jpg"},
-      {"img":"static/web/img/10.jpg"},
-      {"img":"static/web/img/08.jpg"}
-    ]
+      {"img":"static/web/img/room4/pokoj_poddasze1.jpg", "thumb":"static/web/img/room4/pokoj_poddasze1_thumb.jpg"},
+      {"img":"static/web/img/room4/pokoj_poddasze2.jpg", "thumb":"static/web/img/room4/pokoj_poddasze2_thumb.jpg"},
+      {"img":"static/web/img/room4/pokoj_poddasze3.jpg", "thumb":"static/web/img/room4/pokoj_poddasze3_thumb.jpg"},
+      {"img":"static/web/img/room4/pokoj_poddasze4.jpg", "thumb":"static/web/img/room4/pokoj_poddasze4_thumb.jpg"},
+      {"img":"static/web/img/room4/pokoj_poddasze5.jpg", "thumb":"static/web/img/room4/pokoj_poddasze5_thumb.jpg"}
+    ],
+    "landing_thumbnail" :"static/web/img/room4/pokoj_poddasze1.jpg"
+  },
+  {
+    "no": 1,
+    "name": "Apartament z tarasem",
+    "prices": [
+      {"people": 1, "price": "149 zł"},
+      {"people": 2, "price": "199 zł"},
+      {"people": 3, "price": "249 zł"},
+      {"people": 4, "price": "299 zł"}
+    ],
+    "desc": "Apartament o powierzchni 49m2 z  bezpośrednim wyjściem na słoneczny taras z widokiem na wzgórze zamkowe, znajdujący się na I piętrze kamienicy. Na pierwszym poziomie znajduje się pokój dzienny z łazienką wyposażony w rozkładaną sofę, która może służyć jako dodatkowe miejsce do spania dla dwóch osób. Na drugim poziomie (poddaszu) znajduje się kameralna sypialnia, w której znajdziemy dwa komfortowe łóżka z możliwością ich łączenia, na życzenie gości.",
+    "images": [
+      {"img":"static/web/img/room2/pokoj_taras1.jpg", "thumb":"static/web/img/room2/pokoj_taras1_thumb.jpg"},
+      {"img":"static/web/img/room2/pokoj_taras2.jpg", "thumb":"static/web/img/room2/pokoj_taras2_thumb.jpg"},
+      {"img":"static/web/img/room2/pokoj_taras3.jpg", "thumb":"static/web/img/room2/pokoj_taras3_thumb.jpg"},
+      {"img":"static/web/img/room2/pokoj_taras4.jpg", "thumb":"static/web/img/room2/pokoj_taras4_thumb.jpg"},
+      {"img":"static/web/img/room2/pokoj_taras5.jpg", "thumb":"static/web/img/room2/pokoj_taras5_thumb.jpg"}
+    ],
+    "landing_thumbnail" :"static/web/img/room2/pokoj_taras1.jpg"
+  },
+  {
+    "no": 2,
+    "name": "Apartament wschodni",
+    "prices": [
+      {"people": 1, "price": "149 zł"},
+      {"people": 2, "price": "199 zł"},
+      {"people": 3, "price": "249 zł"},
+      {"people": 4, "price": "299 zł"}
+    ],
+    "desc": "Apartament o powierzchni 45m2 z widokiem na Stare Miasto. Apartament znajduje się na I piętrze kamienicy. Pokój dzienny z łazienką znajduje się jednym poziomie a z salonu prowadzą schody do kameralnej sypialni na poddaszu. W sypialni znajdziemy dwa komfortowe łóżka które na życzenie gości mogą być łączone. W pokoju dziennym znajduje się rozkładana sofa, która może służyć jako dodatkowe miejsce spania dla dwojga.",
+    "images": [
+      {"img":"static/web/img/room3/pokoj_miasto1.jpg", "thumb":"static/web/img/room3/pokoj_miasto1_thumb.jpg"},
+      {"img":"static/web/img/room3/pokoj_miasto2.jpg", "thumb":"static/web/img/room3/pokoj_miasto2_thumb.jpg"},
+      {"img":"static/web/img/room3/pokoj_miasto3.jpg", "thumb":"static/web/img/room3/pokoj_miasto3_thumb.jpg"},
+      {"img":"static/web/img/room3/pokoj_miasto4.jpg", "thumb":"static/web/img/room3/pokoj_miasto4_thumb.jpg"},
+      {"img":"static/web/img/room3/pokoj_miasto5.jpg", "thumb":"static/web/img/room3/pokoj_miasto5_thumb.jpg"}
+    ],
+    "landing_thumbnail" :"static/web/img/room3/pokoj_miasto1.jpg"
+  },
+  {
+    "no": 3,
+    "name": "Apartament z patio",
+    "prices": [
+      {"people": 1, "price": "149 zł"},
+      {"people": 2, "price": "199 zł"},
+      {"people": 3, "price": "249 zł"},
+      {"people": 4, "price": "299 zł"}
+    ],
+    "desc": "Apartament na parterze o powierzchni 44m2 z własnym tarasem (o pow",
+    "images": [
+      {"img":"static/web/img/room3/pokoj_miasto1.jpg", "thumb":"static/web/img/room3/pokoj_miasto1_thumb.jpg"},
+      {"img":"static/web/img/room3/pokoj_miasto2.jpg", "thumb":"static/web/img/room3/pokoj_miasto2_thumb.jpg"},
+      {"img":"static/web/img/room3/pokoj_miasto3.jpg", "thumb":"static/web/img/room3/pokoj_miasto3_thumb.jpg"},
+      {"img":"static/web/img/room3/pokoj_miasto4.jpg", "thumb":"static/web/img/room3/pokoj_miasto4_thumb.jpg"},
+      {"img":"static/web/img/room3/pokoj_miasto5.jpg", "thumb":"static/web/img/room3/pokoj_miasto5_thumb.jpg"}
+    ],
+    "landing_thumbnail" :"static/web/img/room3/pokoj_miasto1.jpg"
   }
-
 ]
