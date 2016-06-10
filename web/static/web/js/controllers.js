@@ -4,10 +4,9 @@ var appControllers = angular.module('appControllers', []);
 var first = "kamienicapaslek";
 var last = "gmail.com";
 var contact = first + '@' + last;
+var lang_key = 'NG_TRANSLATE_LANG_KEY';
 
 appControllers.controller('MainController', ['$scope', '$translate', function ($scope, $translateProvider) {
-    var lang_key = 'NG_TRANSLATE_LANG_KEY';
-
     var switchLocale = function (localeKey) {
         $translateProvider.use(localeKey);
         localStorage.setItem(lang_key, localeKey);
