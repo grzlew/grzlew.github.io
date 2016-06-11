@@ -1,38 +1,44 @@
-{% load staticfiles %}
-
 <html ng-app="kamienicaPaslek">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="name" content="Kamienica Pasłęk">
-    <meta name="description" content="Noclegi w odrestaurowanej XIX wiecznej kamienicy położonej w samym sercu miasta Pasłęk.">
+    <meta name="description"
+          content="Noclegi w odrestaurowanej XIX wiecznej kamienicy położonej w samym sercu miasta Pasłęk.">
     <title>Kamienica Pasłęk</title>
 
-    <script src="{% static "web/js/libs/jquery-2.1.4.min.js" %}"></script>
-    <script src="{% static "web/js/libs/bootstrap.min.js" %}"></script>
-    <script src="{% static "web/js/libs/fotorama.js" %}"></script>
-    <script src="{% static "web/js/libs/angular.min.js" %}"></script>
-    <script src="{% static "web/js/libs/angular-route.min.js" %}"></script>
-    <script src="{% static "web/js/libs/angular-resource.min.js" %}"></script>
-    <script src="{% static "web/js/libs/angular-translate.min.js" %}"></script>
+    <script src="/static/web/js/libs/jquery-2.1.4.min.js"></script>
+    <script src="/static/web/js/libs/bootstrap.min.js"></script>
+    <script src="/static/web/js/libs/fotorama.js"></script>
+    <script src="/static/web/js/libs/angular.min.js"></script>
+    <script src="/static/web/js/libs/angular-route.min.js"></script>
+    <script src="/static/web/js/libs/angular-resource.min.js"></script>
+    <script src="/static/web/js/libs/angular-translate.min.js"></script>
 
 
-    <script src="{% static "web/js/i18n/locale_en.js" %}"></script>
-    <script src="{% static "web/js/i18n/locale_pl.js" %}"></script>
-    <script src="{% static "web/js/services.js" %}"></script>
-    <script src="{% static "web/js/controllers.js" %}"></script>
-    <script src="{% static "web/js/app.js" %}"></script>
+    <script src="/static/web/js/i18n/locale_en.js"></script>
+    <script src="/static/web/js/i18n/locale_pl.js"></script>
+    <script src="/static/web/js/services.js"></script>
+    <script src="/static/web/js/controllers.js"></script>
+    <script src="/static/web/js/app.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="{% static "web/css/bootstrap.css" %}"/>
-    <link rel="stylesheet" type="text/css" href="{% static "web/css/fotorama.css" %}"/>
-    <link rel="stylesheet" type="text/css" href="{% static "web/css/styles.css" %}"/>
+    <link rel="stylesheet" type="text/css" href="/static/web/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/web/css/fotorama.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/web/css/styles.css"/>
 
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-76465780-1', 'auto', {
             anonymizeIp: true
